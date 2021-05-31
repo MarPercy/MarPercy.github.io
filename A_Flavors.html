@@ -71,55 +71,49 @@
 			left:1200px;
 			top:-1970
 		}
-		#button-1 {
-			position:absolute;
-			left:700px;
-			top:150px;
-		}
-		#button-2{
-			position:absolute;
-			left:840px;
-			top:165px;
-		}
-		#button-3{
-			position:absolute;
-			left:1050px;
-			top:165px;
-		}
-		#button-4{
-			position:absolute;
-			left:1200px;
-			top:165px;
-    }
+		#topMenu {
+			display: flex;
+			justify-content: space-between;
+			position: relative;
+			top: 10px;
+			width: 65%;
+			height: 10%;
+			margin: auto; }
 		#macaron-menu{
 			position:absolute;
 			left:600px;
 			top: 1600px;
 		}
 
-
+    #all{
+			width:75%;
+			height:100%;
+			margin:auto;
+		}
+		#buttons{
+			width:75%;
+			margin:auto;
+			position: relative;
+			left:-50px
+		}
 		</style>
 	</head>
 		<body>
-			<div id="button-1">
-				<p> <a href="Macaron House.html">Home </a>
-			</div>
-			<div id="button-2">
-				<a href="Other Baked Goods.html">Other Baked Goods</a>
-			</div>
-			<div id="button-3">
-				<a href="About Us.html"> About Us</a>
-			</div>
-			<div id="button-4">
-				<a href="Order.html">Order</a>
-			</div>
+		<div id= "all">
+			<container id = "topMenu">
+				<div id="btn1"> <a href="A_Flavors.html">Flavors										</a> </div>
+				<div id="btn2"> <a href="A_OtherBakedGoods.html">Other Baked Goods	</a> </div>
+				<div id="btn3"> <a href="A_AboutUs.html">About Us										</a> </div>
+				<div id="btn4"> <a href="A_Order.html">Order												</a> </div>
+				<div id="btn5"> <a href="A_Menu.html">Menu													</a> </div>
+			</container>
 		 <h1> <p style="font-size:190%;color:#58D3F7"> <b> <i> Flavors </b> </i> </p> </h1>
 		<div id="Mango">
 		 <img src="Mango.jpg" width="300" height="220">
 		<p style="position:relative;left:75px"><a href="Mango.html"> Mango Macarons </p>
 		</div>
 		<div id="Red-Bean">
-		<img src="Car.jpg" width="300" height="220">
+		<img src="Pictures/Car.jpg" width="300" height="220">
 		<p style="position:relative;left:75px"><a href="Redbean.html"><u>Caramel Macarons </u></p>
 		</div>
 		<div id="Vanilla">
@@ -165,6 +159,7 @@
 		<div id="macaron-menu">
 			<img src="Macaron Menu 10.jpg" width="750px" height="1000px">
 		</div>
+	</div>
 		</body>
 
 

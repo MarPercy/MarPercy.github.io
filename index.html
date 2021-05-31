@@ -1,168 +1,117 @@
 <html>
-	<head>
+<head>
 	<title> Macaron Tea House </title>
-		<style type="text/css">
-	html {background-color:#E6E6E6}
-		 	p {
-			  color:#E2A9F3
-			}
-			a {
-				text-decoration:none;
-			}
-			h1{
-				opacity:4;
-				z-index:1;
-				position:absolute;
-				left:640px;
-				top:-30px;
-			}
-      #logo{
-				opacity:400;
-				z-index:1;
-				position:absolute;
-				left:1250px;
-				top:-10px;
+	<style type="text/css">
+	html { background-color: #E6E6E6 }
+	p {	color: #E2A9F3; }
+	a { text-decoration: none; }
+	h1 {
+		opacity: 4;
+		z-index: 1;
+		position: relative;
+		top: 0px;
+		width: 100%;
+		margin: auto; }
 
-			}
-			#macaron{
-				float:left;
-				width:350px;
-				position:absolute;
-				left:1000px;
-				top:410px;
-}
-			#Backdrop{
-				position:absolute;
-				left:500px;
-				top:0px;
-				z-index:0;
-				opacity:.5;
-			}
-			#macaron-pic{
-				float:left;
-				position:absolute;
-				left:550px;
-				top:340px;
-			}
+	#logo	{
+		opacity: 400;
+		z-index: 1;
+		position: relative;
+		width: 20%;
+		margin: auto;
+		top: 0px;	}
 
-			#good {
-			 	float:right;
-				position:absolute;
-				left:1000px;
-				top:700px;
-			}
+	#macaron {
+		float: right;
+		width: 50%;
+		margin: auto;
+		margin-left: 20px;
+		position: relative;
+		top: 10px; }
 
-			#good-a {
-			 	float:right;
-				width:380px;
-				position:absolute;
-				left:560px;
-				top:780px;
-			}
-			#button-1 {
-				position:absolute;
-				left:700px;
-				top:250px;
-			}
-			#button-2{
-				position:absolute;
-				left:840px;
-				top:270px;
-			}
-			#button-3{
-				position:absolute;
-				left:1070px;
-				top:270px;
-			}
-			#button-4{
-				position:absolute;
-				left:1280px;
-				top:270px;
-			}
-			#links-i{
-				position:absolute;
-				left:700px;
-				top: 1300px;
-				font-size: 150%
-			}
-			#links-f{
-				position:absolute;
-				left:870px;
-				top: 1325px;
-				font-size: 150%
-			}
-			#menu{
-				position:absolute;
-				left: 800px;
-				top:1200px;
-			}
-			#macaron-menu{
-				position:absolute;
-				left:300px;
-				top: 1400px;
-			}
-			#goods-menu{
-				position:relative;
-				left:900px;
-				top: 1400px;
-			}
-			</style>
-	</head>
+	#macaron-pic{
+		float: left;
+		max-width: 200%;
+		max-height: 200%;
+		margin: auto 20px auto auto;
+		position: relative;
+		top: 10px; }
 
-	<body>
-		<div id="Backdrop">
-		<img src="background.jpg" width="1000px" height="250px" >
-		</div>
-		<h1> <p align="middle" style="color: #33ccff;font-size:230%"> <i> <b> Macaron Tea House</b> </i> </p> </h1>
-		<div id="logo">
-		<img src="logo.png" width="180" height="220">
-	</div>
-		<div id="button-1">
-			<p> <a href="Flavors.html">Flavors</a>
-		</div>
-		<div id="button-2">
-			<a href="Other Baked Goods.html">Other Baked Goods</a>
-		</div>
-		<div id="button-3">
-			<a href="About Us.html"> About Us</a>
-		</div>
-		<div id="button-4">
-			<a href="Order.html">Order</a>
-		</div>
+	#good {
+		float: right;
+		width: 30%;
+		height: auto;
+		position: relative;
+		left: 1000px;
+		top: 700px; }
+
+	#good-a {
+		float: right;
+		width: 380px;
+		position: relative;
+		left: 560px;
+		top: 780px; }
+
+	#topMenu {
+		display: flex;
+		justify-content: space-between;
+		position: relative;
+		top: 10px;
+		width: 65%;
+		height: 10%;
+		margin: auto; }
+
+	#info {
+		display: flex;
+		position: relative;
+		top: 0px;
+		width: 50%;
+		margin: auto; }
+
+	#header{
+		display: flex;
+		width: 50%;
+		margin: auto;
+		position: relative;
+	}
+</style>
+</head>
+
+<body>
+	<container id= "header">
+		<h1> <p style="align:middle;color: #33ccff;font-size:230%"> <i> <b> Macaron Tea House </b> </i> </p> </h1>
+		<div id="logo"> <img src="logo.png" width="180" height="220"> </div>
+	</container>
+
+	<container id = "topMenu">
+		<div id="btn1"> <a href="A_Flavors.html">Flavors										</a> </div>
+		<div id="btn2"> <a href="A_OtherBakedGoods.html">Other Baked Goods	</a> </div>
+		<div id="btn3"> <a href="A_AboutUs.html">About Us										</a> </div>
+		<div id="btn4"> <a href="A_Order.html">Order												</a> </div>
+		<div id="btn5"> <a href="A_Menu.html">Menu													</a> </div>
+	</container>
+
+	<container id="info">
 		<div id="macaron-pic">
 			<p style="font-size:160%"> <b> <i> Caramel Macarons </b> </i> </p>
-			<img src="Car.jpg" width="400" height="270" left = "200">
+			<img src="Pictures/Car.jpg">
 		</div>
 		<div id="macaron">
-			<p style="font-size:120%"> Caramel Macarons-</p> <p style="font-size:120%;color:#05b09f">This macaron has a crunchy exterior with a creamy filling and a drizzle of caramel in between.
-			It has the perfect balance of sweet and creamy. It can be stored in the refrigerator for up to a week. Let it sit at room temperature
-			for around 15- 20 minutes before serving or eating. Enjoy it with a hot cup of oolong tea. $8.00 for 5 macarons  </p>
+			<p style="font-size:120%">Caramel Macarons-</p>
+			<p style="font-size:120%;color:#05b09f">This macaron has a crunchy exterior with a creamy filling and a drizzle of caramel in between.
+				It has the perfect balance of sweet and creamy. It can be stored in the refrigerator for up to a week. Let it sit at room temperature
+				for around 15- 20 minutes before serving or eating. Enjoy it with a hot cup of oolong tea. $8.00 for 5 macarons  </p>
 		</div>
-		<div id="good">
-				<p style="font-size:160%"> <b> <i> Walnut and Chocolate Cookies</b> </i> </p>
-			<img src="walnut.jpg" width="400" height="270">
+			<!-- <div id="good">
+			<p style="font-size:160%"> <b> <i> Walnut and Chocolate Cookies</b> </i> </p>
+			<img src="walnut.jpg">
 		</div>
-			<div id="good-a">
-								<p style="font-size:140%">Walnut and Chocolate Cookies- </p>
-								<p style="font-size:140%;color:#05b09f"> This is a hearty cookie filled with walnuts and chocolate chips.
-								This cookie is the perfect afternoon snack to eat with a cup of milk or tea. It has a crispy outside with a soft and chewy inside.
-							  The nuttiness of the walnuts balance out the sweetness of the choclate chips. Store at room tmeperature in an airtight container or in the bag it came in.  </p>
-			</div>
-    <div id= "links-i">
-			<p> <u> <a href="https://www.instagram.com/macaronteahouse/">Instagram Link</a> </u>
-		</div>
-		<div id= "links-f">
-			<u> <a href="https://www.facebook.com/macarontea.house/"> Facebook Link</a> </u>
-		</div>
-		<div id="menu">
-			<p style="font-size:320%;color:#000000"> <u><b><i> Menu </b></i></u> </p>
-		</div>
-		<div id="macaron-menu">
-			<img src="Macaron Menu 10.jpg" width="550px" height="700px">
-		</div>
-		<div id="goods-menu">
-			<img src="baked goods.jpg" width="550" height="700">
-		</div>
-
-	</body>
+		<div id="good-a">
+		<p style="font-size:140%">Walnut and Chocolate Cookies- </p>
+		<p style="font-size:140%;color:#05b09f"> This is a hearty cookie filled with walnuts and chocolate chips.
+		This cookie is the perfect afternoon snack to eat with a cup of milk or tea. It has a crispy outside with a soft and chewy inside.
+		The nuttiness of the walnuts balance out the sweetness of the choclate chips. Store at room tmeperature in an airtight container or in the bag it came in.  </p>
+	</div> -->
+	</container>
+</body>
 </html>
