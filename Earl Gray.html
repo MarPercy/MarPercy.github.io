@@ -9,85 +9,88 @@
 	a {
 		text-decoration:none;
 	}
-	h1{
-		opacity:1;
-		z-index:4;
+	#title{
+		display: flex;
 		position:relative;
-		left:70px;
-		top:-270px;
-	}
+		width:23%;
+		margin:auto;
+		}
+		#earl{
+			float: left;
+			width: 60%;
+			margin: auto ;
+			position: relative;
+			top: 10px; }
 
-	#earlgray{
-		float:left;
-		width:450px;
-		position:relative;
-		left:1100px;
-		top: 70px;
-	}
+		#earlG{
+			float: right;
+			width:40%;
+			margin:auto;
+			position: relative;
+			top: 10px; }
 
-	#earlgrayG{
-		float:left;
-		position:absolute;
-		left:350px;
-		top:250px;
-	}
+		#info {
+			display: flex;
+			position: relative;
+			top: 80px;
+			width:80%;
+			margin: auto }
 
-	#button-4{
-		position:relative;
-		font-size: 400%;
-		left:960px;
-		top:300px;
-	}
+			#Ingredients{
+				float:left;
+				width:70%;
+				margin:auto;
+				position: relative;
+				top: 10px; }
+
+			#button-4{
+				float: right;
+				width:50%;
+				margin:auto;
+				position: relative;
+				top: 10px;
+				font-size:300%
+			}
+
+			#both {
+				display: flex;
+				position: relative;
+				top:150px;
+				width:100%;
+				margin: auto }
 	</style>
 </head>
 
 <body>
-	<div>
-		<p style= "font-size:500%; position:relative; left:800px; top:40px;">
-			Earl Gray Macarons
-		</p>
-	</div>
+<container id="title">
+	<h1> <p style="font-size:200%; width:100%"> <b> <i> Earl Gray Macarons </b> </i> </p> </h1>
+</container>
+<container id="info">
+	<div id="earlG">
 
-	<div id="earlgrayG">
-		<img src="Pictures/earl.jpg" width="700px" height="450px" >
+		<img src="Pictures/earl.jpg" width="80%" height="auto">
 	</div>
+	<div id="earl">
 
-	<div id="earlgray">
-		<p style="font-size:200%;color:#05b09f">
-			This cookie has a slightly crunchy exterior and a soft interior.
-			It has a strong scent of earl gray and is a great option for
-			those who enjoy tea. It can be enjoyed with a warm cup of earl gray tea. Let it sit out at room temperature
-			for 10-15 minutes before serving. $8.00 for 5 macarons
-
-		</p>
+		<p style="font-size:150%;color:#05b09f" width="100%" height="auto">This macaron has a chocolate flavored shell with a chocolate ganache.
+		The dessert is very elegant and perfect for sharing with friends and
+		family. This macaron can last a long time in the refrigerator for a week
+		or more. Take out and set at room temperature for 10-15 minutes before serving.
+		$8.00 for 5 macarons</p>
 	</div>
-
-	<div>
-		<p style="font-size:160%; color:#000000; position:relative; left:-80px; top:600px;">
-			Ingredients
-		</p>
-	</div>
-
-	<div>
-		<p style="font-size:160%; color:#000000; position:relative; left:-80px; top:600px;">
-			~blanched almond flour <br>
-			~powdered sugar <br>
-			~free range egg whites <br>
-			~organic unbleached cane sugar <br>
-			~cream of tartar <br>
-			~organic fresh cream <br>
-			~lemon <br>
-			~earl gray
-		</p>
-	</div>
+</container>
+<container id= "both">
+<div id= "Ingredients">
+<p style="font-size:160%; color:#000000; position:relative; width:100%; margin:auto"> <u>Ingredients</u> <br>
+~blanched almond flour <br> ~powdered sugar <br> ~free range egg whites
+<br> ~organic unbleached cane sugar <br> ~cream of tartar
+<br> ~fresh cream <br> ~earl gray tea <br>~chocolate
+</div>
 
 	<div id="button-4">
-		<p>
-			<a href="Order.html">
-				Order Here!
-			</a>
-		</p>
+	<p style="position:relative; width:100%; margin:auto"> <a href="A_Order.html"> Order Here!</a> </p>
 	</div>
+</container>
 
 </body>
 </html>

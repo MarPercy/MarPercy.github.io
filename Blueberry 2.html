@@ -9,66 +9,88 @@
 			a {
 				text-decoration:none;
 			}
-			h1{
-				opacity:1;
-				z-index:4;
+			#title{
+				display: flex;
 				position:relative;
-				left:70px;
-				top:-270px;
-			}
+				width:23%;
+				margin:auto;
+				}
+				#blueB{
+					float: left;
+					width: 60%;
+					margin: auto ;
+					position: relative;
+					top: 10px; }
 
-			#blueberry{
-				float:left;
-				width:450px;
-				position:relative;
-				left:1100px;
-				top: 70px;
+				#blue{
+					float: right;
+					width:40%;
+					margin:auto;
+					position: relative;
+					top: 10px; }
 
-			}
-			#blueberryB{
-				float:left;
-				position:absolute;
-				left:350px;
-				top:250px;
+				#info {
+					display: flex;
+					position: relative;
+					top: 80px;
+					width:80%;
+					margin: auto }
 
-      }
-      #button-4{
-        position:relative;
-        font-size: 400%;
-        left:460px;
-        top:300px;
-      }
+					#Ingredients{
+						float:left;
+						width:70%;
+						margin:auto;
+						position: relative;
+						top: 10px; }
+
+					#button-4{
+						float: right;
+						width:50%;
+						margin:auto;
+						position: relative;
+						top: 10px;
+						font-size:300%
+					}
+
+					#both {
+						display: flex;
+						position: relative;
+						top:150px;
+						width:100%;
+						margin: auto }
 			</style>
 	</head>
 
 	<body>
-    <div>
-    <p style= "font-size:500%; position:relative; left:800px; top:40px;"> Blueberry Macarons </p>
-    </div>
-		<div id="blueberryB">
-		<img src="Pictures/bluebs.jpg" width="700px" height="450px" >
-		</div>
+		<container id="title">
+			<h1> <p style="font-size:200%; width:100%"> <b> <i> Blueberry Macarons </b> </i> </p> </h1>
+		</container>
+		<container id="info">
+			<div id="blueB">
 
-		<div id="blueberry">
-		  <p style="font-size:160%;color:#05b09f"> A subtle sweet and tart flavor of the filling in the
-      macaron. It is nice to be drinken with a cup of butterfly pea tea. (It also matches the color
-      of the cookie) The shell of the macaron is crunchy with a soft and slightly chewy inside. This can be stored in the refrigerator for up to
-			a week. This cookie is a great option for those that cannot have dairy. Be sure to set out a room temperature for 10-15 minutes before
-      eating. $8.00 for 5 macarons </p>
-		</div>
-    <div>
-    <p style="font-size:160%; color:#000000; position:relative; left:-80px; top:600px;"> Ingredients </p>
-    </div>
-    <div>
-    <p style="font-size:160%; color:#000000; position:relative; left:-80px; top:600px;">
-    ~blanched almond flour <br> ~powdered sugar <br> ~free range egg whites
-    <br> ~organic unbleached cane sugar <br> ~cream of tartar <br> ~blueberries
-    <br> ~lemon <br> ~cream
-    </div>
-    <div>
-      <div id="button-4">
-  		<p> <a href="Order.html"> Order Here!</a> </p>
-  		</div>
+				<img src="Pictures/bluebs.jpg" width="80%" height="auto">
+			</div>
+			<div id="blue">
+
+				<p style="font-size:150%;color:#05b09f" width="100%" height="auto"> A subtle sweet and tart flavor of the filling in the
+	      macaron. It is nice to be drinken with a cup of butterfly pea tea. (It also matches the color
+	      of the cookie) The shell of the macaron is crunchy with a soft and slightly chewy inside. This can be stored in the refrigerator for up to
+				a week. This cookie is a great option for those that cannot have dairy. Be sure to set out a room temperature for 10-15 minutes before
+	      eating. $8.00 for 5 macarons</p>
+			</div>
+		</container>
+	<container id= "both">
+	 <div id= "Ingredients">
+		<p style="font-size:160%; color:#000000; position:relative; width:100%; margin:auto"> <u>Ingredients</u> <br>
+		~blanched almond flour <br> ~powdered sugar <br> ~free range egg whites
+		<br> ~organic unbleached cane sugar <br> ~cream of tartar <br> ~fresh cream
+		<br> ~lemon <br> ~organic blueberries
+	</div>
+
+			<div id="button-4">
+			<p style="position:relative; width:100%; margin:auto"> <a href="A_Order.html"> Order Here!</a> </p>
+			</div>
+	</container>
 
 	</body>
 </html>

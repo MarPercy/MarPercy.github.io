@@ -10,78 +10,87 @@
 				text-decoration:none;
 			}
 			#title{
-					display: flex;
-					position:relative;
-					width:50%;
-					margin:auto;
+				display: flex;
+				position:relative;
+				width:23%;
+				margin:auto;
 				}
-			#mango{
-				float:right;
-				width:40%;
-				position:relative;
-				top:10px;
+				#mangoM{
+					float: left;
+					width: 60%;
+					margin: auto ;
+					position: relative;
+					top: 10px; }
 
-			}
-			#mangoM{
-				float:left;
-				position:relative;
-				width:60%;
-				top:10px;
-			}
-			#info {
+				#mango{
+					float: right;
+					width:40%;
+					margin:auto;
+					position: relative;
+					top: 10px; }
+
+				#info {
 					display: flex;
 					position: relative;
 					top: 80px;
 					width:80%;
 					margin: auto }
 
-      }
-			#ingredients{
-				display: flex;
-				position: relative;
-				top: 80px;
-				width:80%;
-				margin: auto
-			}
-      #button-4{
-        position:relative;
-        font-size: 400%;
-        left:460px;
-        top:300px;
-      }
+					#Ingredients{
+						float:left;
+						width:70%;
+						margin:auto;
+						position: relative;
+						top: 10px; }
+
+					#button-4{
+						float: right;
+						width:50%;
+						margin:auto;
+						position: relative;
+						top: 10px;
+            font-size:300%
+					}
+
+					#both {
+						display: flex;
+						position: relative;
+						top:150px;
+						width:100%;
+						margin: auto }
 			</style>
 	</head>
 
 	<body>
-    <div id="title">
-    <p style= "font-size:300%; position:relative;top:40px;"> Mango Macarons </p>
-    </div>
-	<container id= info>
-		<div id="mangoM">
-		<img src="Pictures/mangs.jpg" width="100%" height="auto" >
-		</div>
+		<container id="title">
+			<h1> <p style="font-size:200%; width:100%"> <b> <i> Mango Macarons </b> </i> </p> </h1>
+		</container>
+		<container id="info">
+			<div id="mangoM">
 
-		<div id="mango">
-		<p style="font-size:150%;color:#05b09f">	The sweet mango jam filling is made with fresh mangos that were cooked
-			down. There is a hint of fresh lemon juice that was added to bring out the
-			mango flavor. This delightful treat is refreshing and light. It is a great option
-			for those who cannot have dairy. It's best to be eaten on the day of delivery, but
-			will be just as great stored in the fridge the next few days. Remeber to leave it at room
-			temperature for 10-15 minutes before eating. $8.00 for 5 macarons </p>
-    </div>
-	</container>
-    <p style="font-size:160%; color:#000000; position:relative; left:-540px; top:100px;"> Ingredients </p>
-    </div>
-    <div id= "ingredients">
-    <p style="font-size:160%; color:#000000; position:relative; width:100%;">
+				<img src="Pictures/mangs.jpg" width="80%" height="auto">
+			</div>
+			<div id="mango">
+
+				<p style="font-size:150%;color:#05b09f" width="100%" height="auto">The sweet mango jam filling is made with fresh mangos that were cooked
+					down. There is a hint of fresh lemon juice that was added to bring out the
+					mango flavor. This delightful treat is refreshing and light. It is a great option
+					for those who cannot have dairy. It's best to be eaten on the day of delivery, but
+					will be just as great stored in the fridge the next few days. Remeber to leave it at room
+					temperature for 10-15 minutes before eating. $8.00 for 5 macarons. </p>
+			</div>
+		</container>
+	<container id= "both">
+	 <div id= "Ingredients">
+    <p style="font-size:160%; color:#000000; position:relative; width:100%; margin:auto"> <u>Ingredients</u> <br>
     ~blanched almond flour <br> ~powdered sugar <br> ~free range egg whites
     <br> ~organic unbleached cane sugar <br> ~cream of tartar <br> ~organic mango
     <br> ~lemon
-    </div>
+	</div>
 
       <div id="button-4">
-  		<p style="position:relative; left:-450px; top:-400px"> <a href="Order.html"> Order Here!</a> </p>
+  		<p style="position:relative; width:100%; margin:auto"> <a href="A_Order.html"> Order Here!</a> </p>
   		</div>
-
+  </container>
 	</body>
 </html>
