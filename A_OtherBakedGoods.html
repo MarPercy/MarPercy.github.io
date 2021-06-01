@@ -5,22 +5,21 @@
 		<style type="text/css">
 		p{
 			color:#00BFFF;
-			font-size:150%
+			font-size:120%
 		}
 		h1{
 			position:relative;
-			top:50px;
 		}
 		#Crinkle{
 			position:relative;
 			width:30%
 		}
 		#Oatmeal{
-		    position:relative;
+		  position:relative;
 			width:30%
 		}
 		#Cookie{
-			position:relative;
+		  position:relative;
 			width:30%
 		}
 		#PeanutCookie{
@@ -46,7 +45,12 @@
 		#Dalgona{
 			position:relative;
 			width:30%
-
+		}
+		#title{
+			display: flex;
+			position:relative;
+			width:30%;
+			margin:auto;
 		}
 		#topMenu {
 			display: flex;
@@ -55,27 +59,13 @@
 			top:50px;
 			width:65%;
 			height:auto;
-			margin: auto; }
-
-		#goods-menu{
-			position:relative;
-			width:60%;
-			margin:auto;
-			top:250px;
-		}
-
-    #title{
-			display: flex;
-			width:100%;
-			margin:auto;
-			position: relative;
-
+			margin: auto;
 		}
 		#row-1{
 			display:flex;
 			justify-content: space-between;
 			position:relative;
-			width:100%;
+			width:95%;
       margin: auto;
 			top:70px;
 		}
@@ -83,7 +73,7 @@
 			display:flex;
 			justify-content: space-between;
 			position:relative;
-			width:100%;
+			width:95%;
 			margin:auto;
 			top:130px;
 		}
@@ -91,38 +81,44 @@
 			display:flex;
 			justify-content: space-between;
 			position:relative;
-			width:100%;
+			width:95%;
 			margin:auto;
 			top:180px;
+		}
+		#goods-menu{
+			position:relative;
+			width:60%;
+			margin:auto;
+			top:250px;
 		}
 		</style>
 	</head>
 		<body>
-	<div id="title">
-		<h1> <p style="font-size:190%;color:#58D3F7; position: relative; align:middle; width:100%; align:middle"><i> <b> Other Baked Goods </b></i> </p></h1>
-	</div>
+			<container id="title">
+				<h1> <p style="font-size:190%;color:#58D3F7"> <b> <i> Other Baked Goods </b> </i> </p> </h1>
+			</container>
 		<container id = "topMenu">
-			<div id="btn1"> <a href="index.html">Home										</a> </div>
-			<div id="btn2"> <a href="A_Flavors.html">Flavors	</a> </div>
+			<div id="btn1"> <a href="index.html">Home										        </a> </div>
+			<div id="btn2"> <a href="A_Flavors.html">Flavors	                  </a> </div>
 			<div id="btn3"> <a href="A_AboutUs.html">About Us										</a> </div>
 			<div id="btn4"> <a href="A_Order.html">Order												</a> </div>
 			<div id="btn5"> <a href="A_Menu.html">Menu													</a> </div>
 		</container>
-	<div id="row-1">
+	<container id="row-1">
     <div id="Crinkle">
 			<p><img src="Pictures/crinklecook.jpg" width="100%" height="auto"</p>
 			<p style="position:relative;"><u> Brownie Cookies </u> ($8.00 for 12) </p>
 		</div>
 		<div id="Oatmeal">
 		<p> <img src="Pictures/oatmealrasin.jpg" width="100%" height="auto"></p>
-		<p style="position:relative;;"> <u> Oatmeal Raisin Cookies </u>($8.00 for 12) </p>
+		<p style="position:relative;"> <u> Oatmeal Raisin Cookies </u>($8.00 for 12) </p>
 		</div>
 		<div id="Cookie">
-		<img src="Pictures/coc.jpg" width="100%" height="auto">
-		<p style="position:relative;"><u> Brown Butter Chocolate Chip Cookie</u> ($12.00 for 8) </p>
+		<p> <img src="Pictures/coc.jpg" width="100%" height="auto"></p>
+		<p style="position:relative;"> <u> Brown Butter CHocolate Chip Cookies </u>($12.00 for 8) </p>
 		</div>
-	</div>
-  <div id="row-2">
+</container>
+  <container id="row-2">
 		<div id="PeanutCookie">
 		<img src="Pictures/Peanut Butter.jpg" width="100%" height="auto">
 		<p style="position:relative;"><u> Peanut Butter Cookie</u> ($8.00 for 12) </p>
@@ -135,7 +131,8 @@
 		<img src="Pictures/walnut.jpg"  width="100%" height="auto">
 		<p style="position:relative;"><u> Walnut and Chocolate Cookies</u> ($8.00 for 12) </p>
   </div>
-	<div id="row-3">
+</container>
+	<container id="row-3">
 		<div id="Mochi">
 		<img src="Pictures/Mochi.jpg" width="100%" height="auto">
 		<p style="position:relative;"><u> Mochi</u> ($8.00 for 10) </p>
@@ -148,9 +145,9 @@
 		<img src="Pictures/dalgona.jpg" width="100%" height="auto">
 		<p style="position:relative;"><u>Dalgona</u> ($2.00 for 4 pieces) </p>
 		</div>
-	</div>
+	</container>
 		<div id="goods-menu">
-			<img src="Pictures/baked goods.jpg" width="750" height="1000">
+			<img src="Pictures/baked goods.jpg" width="100%" height="auto">
 		</div>
 
 		</body>

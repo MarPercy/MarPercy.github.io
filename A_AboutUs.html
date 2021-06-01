@@ -4,24 +4,35 @@
 		<style type="text/css">
 		html {background-color:#E6E6E6}
 		h1{
-		font-size:300%;
 		position:relative;
-		left:800px;
-		top:30px
 		}
 		p{
 		font-size:170%;
 		color:#2ECCFA
 		}
+		#title{
+			display: flex;
+			position:relative;
+			width:23%;
+			margin:auto;
+		}
 		#Banner{
 		position:relative;
-		left:400px;
+		width: 70%;
+		margin:auto;
 		top:10px;
 		}
-		#email{
+		#info{
+			position:relative;
+			width:65%;
+			margin:auto;
+			top:30px;
+		}
+		#contact{
 			font-size:150%;
 			position:relative;
-			left:50px;
+		  width:100%;
+			margin:auto;
 			top:150px
 		}
 		#topMenu {
@@ -37,25 +48,28 @@
 	</head>
 
 	<body>
-	<h1> <p style="color:#58D3F7"> <i> About Us </i> </p> </h1>
+		<container id="title">
+			<h1> <p style="font-size:220%;color:#58D3F7; width:100%"> <b> <i> About Us</b> </i> </p> </h1>
+		</container>
 	<container id = "topMenu">
-		<div id="btn1"> <a href="A_Flavors.html">Flavors										</a> </div>
-		<div id="btn2"> <a href="A_OtherBakedGoods.html">Other Baked Goods	</a> </div>
-		<div id="btn3"> <a href="A_AboutUs.html">About Us										</a> </div>
+		<div id="btn1"> <a href="index.html">Home									        	</a> </div>
+		<div id="btn2"> <a href="A_Flavors.html">Flavors	                  </a> </div>
+		<div id="btn3"> <a href="A_OtherBakedGoods.html">Other Baked Goods	</a> </div>
 		<div id="btn4"> <a href="A_Order.html">Order												</a> </div>
 		<div id="btn5"> <a href="A_Menu.html">Menu													</a> </div>
 	</container>
 	<div id="Banner">
-		<img src="Pictures/About us banner.jpg" width="1000px" height="400px">
+		<img src="Pictures/About us banner.jpg" width="100%" height="auto">
 	</div>
-
-	<p style="width:950px;position:relative; left:425px; top:30px"> We are a family run business here in Rockwall. We have dedicated a lot of time and effort into finding the most natural and
+  <div id="info">
+	<p style="width:100%;position:relative; margin:auto;"> We are a family run business here in Rockwall. We have dedicated a lot of time and effort into finding the most natural and
     unprocessed ingredients for our desserts. We use organic unbleached sugar and flour as well as cage-free eggs. Macaron House is also eco-friendly as
    we use reusable piping bags and baking sheets. Even the dish soap used to wash the preparation bowls, are enviromentally safe and non-toxic.
    The containers used to ship our product to your home is made from biodegradable paper that can be recycled or reused. Our mission is to offer affordable
    desserts that are as natural and organic as possible. We hope to provide you with small treats and love from our family to yours. We are also open to taking special requests
 	 for other desserts that may not even be on the menu. Just send us an email, PM on Facebook, or DM on Instagram telling us what you want and we will let you know if we can make it happen.
-	 <div id="email">
+ </div>
+	 <div id="contact">
 	<p style="color:#9F81F7">
 		Need a special order or want to give us feedback? Email, PM, or DM us here. <br>
 		macaronteahouse@hotmail.com <br>
