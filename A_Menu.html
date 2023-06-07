@@ -2,47 +2,88 @@
 	<head>
 		<title> Menu </title>
 		<style type="text/css">
-		html {background-color:#FFFAF9}
-		h1{
+		html { background-color: #FFFAF9}
+	p{
+		color:#00BFFF;
+		font-size: 150%
+		font-family: "Goudy Old Style", serif;
+	}
+	h1{
+		position:relative;
+		float:left;
+		top: 0px;
+		width:70%;
+		margin: auto;
+	}
+	#topMenu {
+		display: flex;
+		justify-content: space-between;
+		position: relative;
+		top: -10px;
+		width:75%;
+		font-size: 150%;
+		height:auto;
+		margin: 0px;
+	}
+	#topMenu button {
+	font-size: 2vw ; /* Increase button size */
+	margin: 5px;
+	background-color: #58D3F7; /* Set background color to light blue */
+	color: #FFFFFF; /* Set text color to white */
+	border: none; /* Remove button border */
+	padding: 10px 40px; /* Adjust button padding */
+	border-radius: 20px;
+	font-family: "Goudy Old Style", serif;
+	}
+	#topMenu {
+	display: flex;
+	justify-content: center;
+	margin: 10%;
+	width: -60px;
+	position: relative;
+	justify-content: space-between;
+	position: relative;
+	top: -70px;
+	width:75%;
+	font-size: 150%;
+	height:auto;
+	}
+	#logo	{
+	margin-top: 10px;
+	float: right;
+	}
 
-		}
-		p{
-		font-size:170%;
-		color:#2ECCFA
-		}
+	#header{
+	 width: 70%;
+	 margin: auto;
+	 position: relative;
+	}
 		#email{
 			font-size:150%;
 			position:relative;
 			left:50px;
 			top:150px
 		}
-		#topMenu {
-			display: flex;
-			justify-content: space-between;
-			position: relative;
-			top:-10px;
-			width: 75%;
-			font-size:150%;
-			margin: auto; }
+
 	 #links-i{
 			position:relative;
-			font-size:100%;
+			font-size:250%;
 			width:30%;
 		}
 		#links-f{
 			position:relative;
-			font-size:100%;
+			font-size:250%;
 			width:30%;
 		}
 		#links-e{
 			position:relative;
-			font-size:100%;
+			font-size:250%;
 			width:30%;
 		}
 		#links{
 			position: relative;
 			display: flex;
-			top:80px;
+			top:0px;
 			width:75%;
 			margin: auto;
 		}
@@ -74,16 +115,27 @@
 	</head>
 
 	<body>
-<container id= "title">
-	<h1> <p style="color:#58D3F7"> <i> Menu </i> </p> </h1>
-</container>
-	<container id = "topMenu">
-		<div id="btn1"> <u> <a href="index.html">Home							</u> </a> </div>
-	 <div id="btn2"><u> <a href="A_OtherBakedGoods.html">Other Delights	</u></a> </div>
-	 <div id="btn3"> <u><a href="A_AboutUs.html">About Us										</u></a> </div>
-	 <div id="btn4"><u> <a href="A_Order.html">Order												</u></a> </div>
-	 <div id="btn5"> <u><a href="A_Menu.html">Menu													</u></a> </div>
-	</container>
+		<div id="header">
+			<h1>
+				<p style="font-size:160%;color:#58D3F7; width:100%;">
+					<b><i>Menu</i></b>
+				</p>
+			</h1>
+			<div id="logo">
+				<img src="Pictures/logo2.png" width="100px" height="auto">
+			</div>
+		</div>
+
+		<div id = "banner">
+		<img src = "Pictures/mangoBanner.jpg" width="100%" height="auto">
+		</div>
+<div id="topMenu">
+	<button id="btn1" onclick="window.location.href='index.html'">Home</button>
+	<button id="btn2" onclick="window.location.href='A_OtherBakedGoods.html'">Other Delights</button>
+	<button id="btn3" onclick="window.location.href='A_AboutUs.html'">About Us</button>
+	<button id="btn4" onclick="window.location.href='A_Order.html'">Order</button>
+	<button id="btn5" onclick="window.location.href='A_Menu.html'">Menu</button>
+</div>
 <div id="links">
 	<div id= "links-i">
 		<p style="width:100%; height:auto"> <u> <a href="https://www.instagram.com/macaronteahouse/">Instagram Link</a> </u> </p>
