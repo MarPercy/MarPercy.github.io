@@ -1,63 +1,114 @@
 <html>
-	<head>
-		<title> Menu </title>
-		<style type="text/css">
-		html { background-color: #FFFAF9}
-	p{
-		color:#00BFFF;
-		font-size: 150%
-		font-family: "Goudy Old Style", serif;
-	}
-	h1{
-		position:relative;
-		float:left;
-		top: 0px;
-		width:70%;
-		margin: auto;
-	}
-	#topMenu {
-		display: flex;
-		justify-content: space-between;
-		position: relative;
-		top: -10px;
-		width:75%;
-		font-size: 150%;
-		height:auto;
-		margin: 0px;
-	}
-	#topMenu button {
-	font-size: 2vw ; /* Increase button size */
-	margin: 5px;
-	background-color: #58D3F7; /* Set background color to light blue */
-	color: #FFFFFF; /* Set text color to white */
-	border: none; /* Remove button border */
-	padding: 10px 40px; /* Adjust button padding */
-	border-radius: 20px;
-	font-family: "Goudy Old Style", serif;
-	}
-	#topMenu {
-	display: flex;
-	justify-content: center;
-	margin: 10%;
-	width: -60px;
-	position: relative;
-	justify-content: space-between;
-	position: relative;
-	top: -70px;
-	width:75%;
-	font-size: 150%;
-	height:auto;
-	}
-	#logo	{
-	margin-top: 10px;
-	float: right;
-	}
+<head>
+	<title>Menu</title>
+	<style type="text/css">
+		html {
+			background-color: #FFFAF9;
+			font-family: "Times New Roman", serif;
+		}
 
-	#header{
-	 width: 70%;
-	 margin: auto;
-	 position: relative;
-	}
+		#header {
+			width: 100%;
+			background-color: #ffe6e6;
+			padding: 30px 0;
+			box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
+			display: flex;
+			align-items: center; /* Center vertically */
+			justify-content: center; /* Center horizontally */
+			gap: 20px; /* Spacing between logo and title */
+			position: relative; /* To ensure shadow is applied correctly */
+			z-index: 10; /* Keeps the header layer above the nav */
+		}
+
+		h1 {
+			margin: 0;
+			justify-content: center;
+			color: #58D3F7; /* Light blue */
+			display: flex;
+			font-size: clamp(2em, 6vw, 5em); /* Flexible font size */
+			font-style: italic;
+			font-weight: normal;
+		}
+
+		#logo img {
+			max-width: 120px;
+			height: auto;
+			width: clamp(80px, 20vw, 120px); /* Flexible logo size */
+		}
+
+		/* Navigation Bar */
+		nav {
+			width: 100%;
+			height: 7%;
+			background-color: #ccffff; /* Light blue */
+			display: flex;
+			justify-content: space-between;
+			padding: 10px 0px;
+			align-items: center;
+			box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4); /* Increased shadow for nav */
+			margin-top: 0px; /* Adjust to create space between nav and header */
+		}
+
+		nav a {
+			text-decoration: none;
+			color: #58D3F7;
+			font-size: 1.7vw; /* Proportional size based on viewport width */
+			flex: 1; /* Ensures links grow/shrink evenly */
+			text-align: center; /* Center the text inside each link */
+			padding: 0 0px
+	    }
+
+		#footer{
+			width: 100%;
+			height: 20%;
+			background-color: #ffe6e6;
+			box-shadow: 0px -4px 12px rgba(0, 0, 0, 0.4);
+			display: flex;
+			justify-content: space-between;
+			padding: 10px 20px;
+			align-items: center;
+			position: relative;
+		}
+		#links{
+			text-decoration: none;
+			color: #58D3F7;
+			font-size: 1.7vw; /* Proportional size based on viewport width */
+			flex: 1; /* Ensures links grow/shrink evenly */
+			text-align: center; /* Center the text inside each link */
+			padding: 0 20px;
+	
+		}
+		#links a {
+			text-decoration: none;
+			color: #4e8187;
+			justify-content: space-between;
+		}
+		#title{
+			flex: 1;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 2.5vw;
+			color: #58D3F7;
+		}
+
+		/* Carousel Section */
+		#carousel {
+		    width: 100%; /* Full width */
+		    height: auto;
+		    position: relative; /* Necessary for slides and overlays */
+		    overflow: hidden;
+		}
+
+		.carousel-slide {
+		    position: relative; /* Needed for absolute positioning of overlays */
+		}
+
+		.carousel-slide img {
+		    width: 100%;
+		    height: 100%;
+		    object-fit: cover; /* Ensures image scales properly */
+		}
 		#email{
 			font-size:150%;
 			position:relative;
@@ -65,7 +116,7 @@
 			top:150px
 		}
 
-	 #links-i{
+	 	#links-i{
 			position:relative;
 			font-size:250%;
 			width:30%;
@@ -94,48 +145,78 @@
 			height:auto;
 			top:100px;
 			margin:auto;
-		}
-   #macaron-menu{
-		 display: flex;
-		 position:relative;
-		 width:100%;
-		 height:auto;
-		 top: 100px;
-		 margin:auto ;
-	 }
-	 #title{
-		 display: flex;
-		 position: relative;
-		 width:20%;
-		 margin: auto;
-		 font-size:120%
-	 }
+			margin-bottom: 20%;
+			}
+   		#macaron-menu{
+			display: flex;
+			position:relative;
+			width:100%;
+			height:auto;
+			top: 100px;
+			margin:auto ;
+			}
+	 	#title{
+			display: flex;
+			position: relative;
+			width:20%;
+			margin: auto;
+			font-size:120%
+			}
 
-		</style>
-	</head>
 
-	<body>
-		<div id="header">
-			<h1>
-				<p style="font-size:160%;color:#58D3F7; width:100%;">
-					<b><i>Menu</i></b>
-				</p>
-			</h1>
-			<div id="logo">
-				<img src="Pictures/logo2.png" width="100px" height="auto">
-			</div>
+
+	</style>
+
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" />
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('#carousel').slick({
+				autoplay: true,
+				autoplaySpeed: 2700,
+				dots: false, /* Removed dots for navigation */
+				arrows: false, /* Removed navigation arrows */
+				infinite: true,
+				speed: 500,
+				fade: false,
+				cssEase: 'linear'
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<div id="header">
+		<div id="logo">
+			<img src="Pictures/logo2.png" alt="Logo">
 		</div>
+		<h1>Menu</h1>
+	</div>
 
-		<div id = "banner">
-		<img src = "Pictures/mangoBanner.jpg" width="100%" height="auto">
+	<nav>
+		<a href="index.html">Home</a>
+		<a href="A_Flavors.html">Macaron Flavors</a>
+		<a href="A_OtherBakedGoods.html">Other Delights</a>
+		<a href="A_AboutUs.html">About Us</a>
+		<a href="A_Order.html">Order</a>
+		<a href="A_Menu.html">Menu</a>
+	</nav>
+
+	<div id="carousel">
+		<div class="carousel-slide">
+			<img src="Pictures/eggtart.jpg" alt="Slide 1">
 		</div>
-<div id="topMenu">
-	<button id="btn1" onclick="window.location.href='index.html'">Home</button>
-	<button id="btn2" onclick="window.location.href='A_OtherBakedGoods.html'">Other Delights</button>
-	<button id="btn3" onclick="window.location.href='A_AboutUs.html'">About Us</button>
-	<button id="btn4" onclick="window.location.href='A_Order.html'">Order</button>
-	<button id="btn5" onclick="window.location.href='A_Menu.html'">Menu</button>
-</div>
+		<div class="carousel-slide">
+			<img src="Pictures/mangs.jpg" alt="Slide 2">
+		</div>
+		<div class="carousel-slide">
+			<img src="Pictures/vv.jpg" alt="Slide 3">
+		</div>
+	</div>
+		
+
+	
 <div id="links">
 	<div id= "links-i">
 		<p style="width:100%; height:auto"> <u> <a href="https://www.instagram.com/macaronteahouse/">Instagram Link</a> </u> </p>
@@ -153,11 +234,15 @@
 	<div id="goods-menu">
 		<img src="Pictures/baked goods.jpg" width="100%" height="auto">
 	</div>
-
-
-
-
-
-
-
+	<div id = "footer">
+		<div id = "title">
+			<p style = "font-size:3.0vw">Macaron Tea House</p>
+		</div>
+		<div id = "links">
+			<a href = "https://www.facebook.com/macteahouse/">Facebook</a> 
+			<a href = "https://www.instagram.com/macaronteahouse/?hl=en">Instagram</a>
+			<a href="mailto: macaronteahouse@hotmail.com"> Email <a></a>
+		</div>
+	</div>
+</body>
 </html>

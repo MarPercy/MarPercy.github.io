@@ -1,62 +1,112 @@
 <html>
 <head>
-	<title> Rose Macarons </title>
+	<title>Rose Macarons</title>
 	<style type="text/css">
-	html { background-color: #FFFAF9}
-p{
-	color:#00BFFF;
-	font-size: 150%
-	font-family: "Goudy Old Style", serif;
-}
-h1{
-	position:relative;
-	float:left;
-	top: 0px;
-	width:70%;
-	margin: auto;
-}
-	#title{
-		display: flex;
-		position:relative;
-		width:23%;
-		margin:auto;
+		html {
+			background-color: #FFFAF9;
+			font-family: "Times New Roman", serif;
 		}
-		#rose{
-			float: left;
-			width: 60%;
-			margin: auto ;
-			position: relative;
-			top: 10px; }
 
-		#roser{
-			float: right;
-			width:40%;
-			margin:auto;
-			position: relative;
-			top: 10px; }
-
-		#info {
+		#header {
+			width: 100%;
+			background-color: #ffe6e6;
+			padding: 30px 0;
+			box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
 			display: flex;
-			position: relative;
-			top: 80px;
-			width:80%;
-			margin: auto }
+			align-items: center; /* Center vertically */
+			justify-content: center; /* Center horizontally */
+			gap: 20px; /* Spacing between logo and title */
+			position: relative; /* To ensure shadow is applied correctly */
+			z-index: 10; /* Keeps the header layer above the nav */
+		}
+
+		h1 {
+			margin: 0;
+			justify-content: center;
+			color: #58D3F7; /* Light blue */
+			display: flex;
+			font-size: clamp(2em, 6vw, 5em); /* Flexible font size */
+			font-style: italic;
+			font-weight: normal;
+		}
+
+		#logo img {
+			max-width: 120px;
+			height: auto;
+			width: clamp(80px, 20vw, 120px); /* Flexible logo size */
+		}
+
+		/* Navigation Bar */
+		nav {
+			width: 100%;
+			height: 7%;
+			background-color: #ccffff; /* Light blue */
+			display: flex;
+			justify-content: space-between;
+			padding: 10px 0px;
+			align-items: center;
+			box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4); /* Increased shadow for nav */
+			margin-top: 0px; /* Adjust to create space between nav and header */
+		}
+
+		nav a {
+			text-decoration: none;
+			color: #58D3F7;
+			font-size: 1.7vw; /* Proportional size based on viewport width */
+			flex: 1; /* Ensures links grow/shrink evenly */
+			text-align: center; /* Center the text inside each link */
+			padding: 0 0px
+	    }
+
+		#WhyWeStarted {
+			display: flex; /* Creates a side-by-side layout */
+			flex-direction: row; /* Ensures horizontal alignment */
+			align-items: flex-start; /* Aligns items to the top */
+			justify-content: space-between; /* Spaces out the text and image */
+			width: 90%; /* Restricts the width of the entire section */
+			margin: auto; /* Centers the container on the page */
+			padding: 20px; /* Adds internal spacing */
+			gap: 7%; /* Adds space between the text and the image */
+			}
+
+		#text {
+			flex: 1; /* Allows the text section to take up equal space with the image */
+			max-width: 50%; /* Limits the text to 50% of the container width */
+			color: #373e50;
+			font-size: 2.0vw;
+			}
+
+		#photo {
+			flex: 1; /* Ensures the photo container takes up equal space with the text */
+			max-width: 50%; /* Limits the photo to 50% of the container width */
+			text-align: center; /* Centers the image within the photo container */
+			align-items: center;
+			margin-top: 10%;
+				}
+
+		#photo img {
+		    width: 100%; /* Makes the image fill the container */
+		    height: auto; /* Maintains aspect ratio */
+		    border-radius: 10px; /* Optional: Adds rounded corners */
+		    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow for aesthetics */
+		}
+		#title{
+			display: flex;
+			position:relative;
+			width:100%;
+			margin:auto;
+			margin-left: 10%
+			}
 
 			#Ingredients{
 				float:left;
-				width:70%;
+				width:100%;
 				margin:auto;
 				position: relative;
-				top: 10px; }
-
-			#button-4{
-				float: right;
-				width:50%;
-				margin:auto;
-				position: relative;
-				top: 10px;
-				font-size:300%
+				top: 10px; 
+				margin-bottom: 10%
 			}
+
 
 			#both {
 				display: flex;
@@ -64,38 +114,92 @@ h1{
 				top:150px;
 				width:100%;
 				margin: auto }
+			#footer{
+				width: 100%;
+				height: 20%;
+				background-color: #ffe6e6;
+				box-shadow: 0px -4px 12px rgba(0, 0, 0, 0.4);
+				display: flex;
+				justify-content: space-between;
+				padding: 10px 20px;
+				align-items: center;
+				position: relative;
+				}
+			#links{
+				text-decoration: none;
+				color: #58D3F7;
+				font-size: 1.7vw; /* Proportional size based on viewport width */
+				flex: 1; /* Ensures links grow/shrink evenly */
+				text-align: center; /* Center the text inside each link */
+				padding: 0 20px;
+		
+			}
+			#links a {
+				text-decoration: none;
+				color: #4e8187;
+				justify-content: space-between;
+			}
+			#title2{
+				flex: 1;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				font-size: 2.5vw;
+				color: #58D3F7;
+			}
+
 	</style>
 </head>
 
 <body>
-<container id="title">
-	<h1> <p style="font-size:200%; width:100%"> <b> <i> Rose Macarons </b> </i> </p> </h1>
-</container>
-<container id="info">
-	<div id="roser">
-		<img src="Pictures/rose1.jpg" width="80%" height="auto">
+	<div id="header">
+		<div id="logo">
+			<img src="Pictures/logo2.png" alt="Logo">
+		</div>
+		<h1>Macaron Tea House</h1>
 	</div>
-	<div id="rose">
-		<p style="font-size:150%;color:#05b09f" width="100%" height="auto">	This cookie has a mildly sweet and unique flavor.
+
+	<nav>
+		<a href="index.html">Home</a>
+		<a href="A_Flavors.html">Macaron Flavors</a>
+		<a href="A_OtherBakedGoods.html">Other Delights</a>
+		<a href="A_AboutUs.html">About Us</a>
+		<a href="A_Order.html">Order</a>
+		<a href="A_Menu.html">Menu</a>
+	</nav>
+
+<div id="WhyWeStarted">
+	<div id="text">
+		<p style="color:#58D3F7; font-size:5.0vw;">Rose Macarons</p>
+		<p>
+			This cookie has a mildly sweet and unique flavor.
 			It tastes like how a rose smells. It can be enjoyed with a cup of rose tea.
 			The cookie has a crunchy exterior with a soft interior.
-			Remember to let it sit out at room temperature for 15-20 minutes before eating. $22.00 for 10 macarons. </p>
-	</div>
-</container>
-<container id= "both">
-<div id= "Ingredients">
-<p style="font-size:160%; color:#000000; position:relative; width:60%; margin:auto"> <u>Ingredients</u> <br>
-~blanched almond flour <br> ~powdered sugar <br> ~free range egg whites
-<br> ~organic unbleached cane sugar <br> ~cream of tartar
-<br> ~fresh cream <br> ~organic rose water
-</div>
-
-	<div id="button-4">
-	<p style="position:relative; width:100%; margin:auto"> <a href="A_Order.html"> Order Here!</a> </p>
-	</div>
-</container>
+			 Remember to let them sit out at room temperature 
+			for around 20 minutes before enjoying! <br>
+			$22 for 1 box of 10 macarons
 		</p>
 	</div>
-
+	<div id="photo">
+		<img src="Pictures/rose1.jpg" alt="Rose Macarons">
+	</div>
+</div>
+<div id= "Ingredients">
+<p style="font-size:1.8vw; color:#4e8187; position:relative; width:60%; margin:auto"> <u>Ingredients</u> <br>
+~blanched almond flour, powdered sugar, free range egg whites, organic unbleached cane sugar, cream of tartar, fresh cream, lemon, organic rose water
+</div>
+<div id = "footer">
+	<div id = "title2">
+		<p style = "font-size:3.0vw">Macaron Tea House</p>
+	</div>
+	<div id = "links">
+		<a href = "https://www.facebook.com/macteahouse/">Facebook</a> 
+		<a href = "https://www.instagram.com/macaronteahouse/?hl=en">Instagram</a>
+		<a href="mailto: macaronteahouse@hotmail.com"> Email <a></a>
+	</div>
+</div>
 </body>
 </html>
+
+
+

@@ -1,131 +1,276 @@
 <html>
-	<head>
-		<title> About Us </title>
-		<style type="text/css">
-		html { background-color: #FFFAF9}
-  p{
-    color:#00BFFF;
-    font-size: 150%
-		font-family: "Goudy Old Style", serif;
-  }
-  h1{
-    position:relative;
-		float:left;
-	  top: 0px;
-	  width:70%;
-	  margin: auto;
-  }
-	#topMenu {
-		display: flex;
-		justify-content: space-between;
-		position: relative;
-		top: -10px;
-		width:75%;
-		font-size: 150%;
-		height:auto;
-}
-#topMenu button {
-	font-size: 2vw ; /* Increase button size */
-	margin: 5px;
-	background-color: #58D3F7; /* Set background color to light blue */
-	color: #FFFFFF; /* Set text color to white */
-	border: none; /* Remove button border */
-	padding: 10px 40px; /* Adjust button padding */
-	border-radius: 20px;
-	font-family: "Goudy Old Style", serif;
-}
-#topMenu {
-	display: flex;
-	justify-content: center;
-	margin: 10%;
-	width: -60px;
-	position: relative;
-	justify-content: space-between;
-	position: relative;
-	top: -70px;
-	width:75%;
-	font-size: 150%;
-	height:auto;
-}
-#logo	{
-  margin-top: 10px;
-	float: right;
-}
+<head>
+	<title>About Us</title>
+	<style type="text/css">
+		html {
+			background-color: #FFFAF9;
+			font-family: "Times New Roman", serif;
+		}
 
-#header{
-   width: 70%;
-   margin: auto;
-	 position: relative;
-  }
-		#title{
+		#header {
+			width: 100%;
+			background-color: #ffe6e6;
+			padding: 30px 0;
+			box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
 			display: flex;
-			position:relative;
-			width:23%;
-			margin:auto;
+			align-items: center; /* Center vertically */
+			justify-content: center; /* Center horizontally */
+			gap: 20px; /* Spacing between logo and title */
+			position: relative; /* To ensure shadow is applied correctly */
+			z-index: 10; /* Keeps the header layer above the nav */
 		}
 
-		#info{
-			position:relative;
-			width:65%;
-			margin:auto;
-			top:0px;
-			font-size: 200%;
-		}
-		#contact{
-			font-size:150%;
-			position:relative;
-		  width:100%;
-			margin:auto;
-			top:150px
+		h1 {
+			margin: 0;
+			justify-content: center;
+			color: #58D3F7; /* Light blue */
+			display: flex;
+			font-size: clamp(2em, 6vw, 5em); /* Flexible font size */
+			font-style: italic;
+			font-weight: normal;
 		}
 
-		</style>
-	</head>
+		#logo img {
+			max-width: 120px;
+			height: auto;
+			width: clamp(80px, 20vw, 120px); /* Flexible logo size */
+		}
 
-	<body>
-		<div id="header">
-			<h1>
-				<p style="font-size:160%;color:#58D3F7; width:100%;">
-					<b><i>About Us</i></b>
-				</p>
-			</h1>
-			<div id="logo">
-				<img src="Pictures/logo2.png" width="100px" height="auto">
+		/* Navigation Bar */
+		nav {
+			width: 100%;
+			height: 7%;
+			background-color: #ccffff; /* Light blue */
+			display: flex;
+			justify-content: space-between;
+			padding: 10px 0px;
+			align-items: center;
+			box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4); /* Increased shadow for nav */
+			margin-top: 0px; /* Adjust to create space between nav and header */
+		}
+
+		nav a {
+			text-decoration: none;
+			color: #58D3F7;
+			font-size: 1.7vw; /* Proportional size based on viewport width */
+			flex: 1; /* Ensures links grow/shrink evenly */
+			text-align: center; /* Center the text inside each link */
+			padding: 0 0px
+	    }
+
+		#WhyWeStarted {
+			display: flex; /* Creates a side-by-side layout */
+			flex-direction: row; /* Ensures horizontal alignment */
+			align-items: flex-start; /* Aligns items to the top */
+			justify-content: space-between; /* Spaces out the text and image */
+			width: 90%; /* Restricts the width of the entire section */
+			margin: auto; /* Centers the container on the page */
+			padding: 20px; /* Adds internal spacing */
+			gap: 7%; /* Adds space between the text and the image */
+			}
+
+		#text {
+			flex: 1; /* Allows the text section to take up equal space with the image */
+			max-width: 50%; /* Limits the text to 50% of the container width */
+			color: #373e50;
+			font-size: 2.3vw;
+			}
+
+		#photo {
+			flex: 1; /* Ensures the photo container takes up equal space with the text */
+			max-width: 50%; /* Limits the photo to 50% of the container width */
+			text-align: center; /* Centers the image within the photo container */
+			align-items: center;
+			margin-top: 10%;
+				}
+
+		#photo img {
+		    width: 100%; /* Makes the image fill the container */
+		    height: auto; /* Maintains aspect ratio */
+		    border-radius: 10px; /* Optional: Adds rounded corners */
+		    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow for aesthetics */
+		}
+		#WhatMakesUsUnique {
+			display: flex; /* Creates a side-by-side layout */
+			flex-direction: row; /* Ensures horizontal alignment */
+			align-items: flex-start; /* Aligns items to the top */
+			justify-content: space-between; /* Spaces out the text and image */
+			width: 90%; /* Restricts the width of the entire section */
+			margin: auto; /* Centers the container on the page */
+			padding: 20px; /* Adds internal spacing */
+			gap: 7%; /* Adds space between the text and the image */
+			margin-bottom: 10%; /* Space between the last row and footer */
+				}
+
+		#text2 {
+			flex: 1; /* Allows the text section to take up equal space with the image */
+			max-width: 50%; /* Limits the text to 50% of the container width */
+			color: #373e50;
+			font-size: 2.3vw;
+				}
+
+		#photo2 {
+			flex: 1; /* Ensures the photo container takes up equal space with the text */
+			max-width: 50%; /* Limits the photo to 50% of the container width */
+			text-align: center; /* Centers the image within the photo container */
+			align-items: center;
+			margin-top: 15%;
+				}
+
+		#photo2 img {
+			width: 100%; /* Makes the image fill the container */
+			height: auto; /* Maintains aspect ratio */
+			border-radius: 10px; /* Optional: Adds rounded corners */
+			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow for aesthetics */
+		}
+
+		#footer{
+			width: 100%;
+			height: 20%;
+			background-color: #ffe6e6;
+			box-shadow: 0px -4px 12px rgba(0, 0, 0, 0.4);
+			display: flex;
+			justify-content: space-between;
+			padding: 10px 20px;
+			align-items: center;
+		}
+		#links{
+			text-decoration: none;
+			color: #58D3F7;
+			font-size: 1.7vw; /* Proportional size based on viewport width */
+			flex: 1; /* Ensures links grow/shrink evenly */
+			text-align: center; /* Center the text inside each link */
+			padding: 0 20px;
+	
+		}
+		#links a {
+			text-decoration: none;
+			color: #4e8187;
+			justify-content: space-between;
+		}
+		#title{
+			flex: 1;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 2.5vw;
+			color: #58D3F7;
+		}
+
+		/* Carousel Section */
+		#carousel {
+		    width: 100%; /* Full width */
+		    height: auto;
+		    position: relative; /* Necessary for slides and overlays */
+		    overflow: hidden;
+		}
+
+		.carousel-slide {
+		    position: relative; /* Needed for absolute positioning of overlays */
+		}
+
+		.carousel-slide img {
+		    width: 100%;
+		    height: 100%;
+		    object-fit: cover; /* Ensures image scales properly */
+		}
+
+
+	</style>
+
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" />
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('#carousel').slick({
+				autoplay: true,
+				autoplaySpeed: 2700,
+				dots: false, /* Removed dots for navigation */
+				arrows: false, /* Removed navigation arrows */
+				infinite: true,
+				speed: 500,
+				fade: false,
+				cssEase: 'linear'
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<div id="header">
+		<div id="logo">
+			<img src="Pictures/logo2.png" alt="Logo">
+		</div>
+		<h1>About Us</h1>
+	</div>
+
+	<nav>
+		<a href="index.html">Home</a>
+		<a href="A_Flavors.html">Macaron Flavors</a>
+		<a href="A_OtherBakedGoods.html">Other Delights</a>
+		<a href="A_AboutUs.html">About Us</a>
+		<a href="A_Order.html">Order</a>
+		<a href="A_Menu.html">Menu</a>
+	</nav>
+
+	<div id="carousel">
+			<div class="carousel-slide">
+				<img src="Pictures/au rose.jpg" alt="Slide 1">
 			</div>
+			<div class="carousel-slide">
+				<img src="Pictures/maple3.jpg" alt="Slide 2">
+			</div>
+			<div class="carousel-slide">
+				<img src="Pictures/Strawberry2.jpg" alt="Slide 3">
+			</div>
+
+	</div>
+
+	<div id="WhyWeStarted">
+	    <div id="text">
+	        <p style="color:#58D3F7; font-size:4.0vw;">Our Process and Ingredients</p>
+	        <p>
+				We are a family run business here in Rockwall. We have dedicated a lot of time and effort into 
+				finding the most natural and high quality ingredients for our desserts. We use organic unbleached 
+				sugar and flour as well as cage-free eggs. Macaron Tea House is also eco-friendly as we try our 
+				best to use reusable piping bags and baking sheets. Even the dish soap used to wash the preparation 
+				bowls, are enviromentally safe and non-toxic. 
+	            
+	        </p>
+	    </div>
+	    <div id="photo">
+	        <img src="Pictures/au matcha.jpg" alt="Strawberry Milk">
+	    </div>
+	</div>
+	<div id="WhatMakesUsUnique">
+		<div id="photo2">
+				<img src="Pictures/mac box2.JPG" alt="Mooncake">
 		</div>
+	    <div id="text2">
+	        <p style="color:#58D3F7; font-size:4.0vw;">Our Mission</p>
+	        <p>
+				Our mission is to offer affordable desserts that are 
+				as natural and organic as possible in an eco-friendly and non-toxic environment. 
+				We hope to provide you with small treats and love from our family to yours. For any 
+				questions or special requests please send us an <a href="mailto: macaronteahouse@hotmail.com">Email</a>, PM us on
+				 <a href = "https://www.facebook.com/macteahouse/">Facebook</a>, or DM us on
+				<a href = "https://www.instagram.com/macaronteahouse/?hl=en">Instagram</a>
+				and we will respond as soon as possible.
+	    </div>
 
-<div id = "banner">
-	<img src = "Pictures/roseBanner.jpg" width="100%" height="auto">
-</div>
-		<div id="topMenu">
-			<button id="btn1" onclick="window.location.href='index.html'">Home</button>
-			<button id="btn2" onclick="window.location.href='A_OtherBakedGoods.html'">Other Delights</button>
-			<button id="btn3" onclick="window.location.href='A_AboutUs.html'">About Us</button>
-			<button id="btn4" onclick="window.location.href='A_Order.html'">Order</button>
-			<button id="btn5" onclick="window.location.href='A_Menu.html'">Menu</button>
+	</div>
+	<div id = "footer">
+		<div id = "title">
+			<p style = "font-size:3.0vw">Macaron Tea House</p>
 		</div>
-
-  <div id="info">
-	<p style="width:100%;position:relative; margin:auto;"> We are a family run business here in Rockwall. We have dedicated a lot of time and effort into finding the most natural and
-    high quality ingredients for our desserts. We use organic unbleached sugar and flour as well as cage-free eggs. Macaron Tea House is also eco-friendly as
-   we try our best to use reusable piping bags and baking sheets. Even the dish soap used to wash the preparation bowls, are enviromentally safe and non-toxic.
-   Our mission is to offer affordable desserts that are as natural and organic as possible in an eco-friendly and non-toxic environment. We hope to provide you with small treats and love from our family to yours. For any questions or special requests please send us an email, PM on Facebook, or DM on Instagram and we will respond as soon as possible.
- </div>
-	 <div id="contact">
-	<p style="color:#9F81F7">
-		Have a requests, want to give us feedback, or have a question? Email, PM, or DM us here. <br>
-	 <br>
-			<u> <a href="https://www.instagram.com/macaronteahouse/">Instagram Link</a> </u> <br>
-			<u> <a href="https://www.facebook.com/macteahouse"> Facebook Link</a> </u> <br>
-      <u> <a href="mailto:macaronteahouse@hotmail.com"> Email Link</a> </u> </p>
-			<br>
-
-			<br>
-
-
-
-			<br>
+		<div id = "links">
+			<a href = "https://www.facebook.com/macteahouse/">Facebook</a> 
+			<a href = "https://www.instagram.com/macaronteahouse/?hl=en">Instagram</a>
+			<a href="mailto: macaronteahouse@hotmail.com"> Email <a></a>
 		</div>
-  </div>
-	</body>
+	</div>
+
+
+</body>
 </html>

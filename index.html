@@ -2,206 +2,197 @@
 <head>
 	<title>Macaron Tea House</title>
 	<style type="text/css">
-		/* CSS styles */
-    html { background-color: #FFFAF9}
-  p{
-    color:#00BFFF;
-    font-size: 150%
-		font-family: "Goudy Old Style", serif;
-  }
-  h1{
-    position:relative;
-		float:left;
-	  top: 0px;
-	  width:70%;
-	  margin: auto;
-
-  }
-
-  #Mango{
-    position:relative;
-    width:30%;
-
-  }
-  #Red-Bean{
-      position:relative;
-      width:30%
-  }
-  #Vanilla{
-    position:relative;
-    width:30%;
-
-  }
-  #Blueberry{
-    position:relative;
-    width:30%;
-
-  }
-  #Creamcheese{
-    position:relative;
-    width:30%;
-  }
-  #Strawberry{
-    position:relative;
-    width:30%;
-  }
-  #Chocolate{
-    position:relative;
-    width:30%;
-  }
-  #Earl_gray{
-    position:relative;
-    width:30%;
-  }
-  #Lemon{
-    position:relative;
-    width:30%;
-  }
-  #Rose{
-    position:relative;
-   width:30%;
-  }
-  #Mango-milk{
-    position:relative;
-    width:30%;
-  }
-  #Matcha{
-    position:relative;
-    width:30%;
-  }
-  #Biscoff{
-    position:relative;
-    width:30%;
-
-  }
-  #Espresso{
-    position:relative;
-    width:30%;
-
-  }
-  #Seasonal{
-    position:relative;
-    width:30%;
-
-  }
-
-    #topMenu {
-			display: flex;
-      justify-content: space-between;
-      position: relative;
-      top: -10px;
-      width:75%;
-      font-size: 150%;
-      height:auto;
-      margin: 0px;
-  }
-  #row-1{
-    display:flex;
-    justify-content: space-between;
-    position:relative;
-    width:95%;
-    margin:auto;
-    top:200px;
-  }
-  #row-2{
-    display:flex;
-    justify-content: space-between;
-    position:relative;
-    width:95%;
-    margin:auto;
-    top:220px;
-  }
-  #row-3{
-    display:flex;
-    justify-content: space-between;
-    position:relative;
-    width:95%;
-    margin:auto;
-    top:230px;
-  }
-  #row-4{
-    display:flex;
-    justify-content: space-between;
-    position:relative;
-    width:95%;
-    margin:auto;
-    top:250px;
-  }
-  #row-5{
-    display:flex;
-    justify-content: space-between;
-    position:relative;
-    width:95%;
-    margin:auto;
-    top:260px;
-  }
-  #macaron-menu{
-    position:relative;
-    width:100%;
-    margin:auto;
-    top:270px;
-  }
-
-
-#logo	{
-  margin-top: 10px;
-	float: right;
-}
-
-#header{
-   width: 70%;
-   margin: auto;
-	 position: relative;
-  }
-
-#label{
-  display:flex;
-  position: relative;
-  width:30%;
-  top:0px;
-  margin: auto;
-  background-color: #7FFFD4;
-
-}
-
-		#carousel {
-			display: flex;
-			width: 60%;
-			height: relative;
-			position: relative;
-			margin: 0 auto; /* Center the carousel horizontally */
-			overflow: hidden; /* Ensure the overlay covers the carousel */
-			top: -100px;
+		html {
+			background-color: #FFFAF9;
+			font-family: "Times New Roman", serif;
 		}
 
-    #topMenu {
+		#header {
+			width: 100%;
+			background-color: #ffe6e6;
+			padding: 30px 0;
+			box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
+			display: flex;
+			align-items: center; /* Center vertically */
+			justify-content: center; /* Center horizontally */
+			gap: 20px; /* Spacing between logo and title */
+			position: relative; /* To ensure shadow is applied correctly */
+			z-index: 10; /* Keeps the header layer above the nav */
+		}
+
+		h1 {
+			margin: 0;
+			justify-content: center;
+			color: #58D3F7; /* Light blue */
+			display: flex;
+			font-size: clamp(2em, 6vw, 5em); /* Flexible font size */
+			font-style: italic;
+			font-weight: normal;
+		}
+
+		#logo img {
+			max-width: 120px;
+			height: auto;
+			width: clamp(80px, 20vw, 120px); /* Flexible logo size */
+		}
+
+		/* Navigation Bar */
+		nav {
+			width: 100%;
+			height: 7%;
+			background-color: #ccffff; /* Light blue */
+			display: flex;
+			justify-content: space-between;
+			padding: 10px 0px;
+			align-items: center;
+			box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4); /* Increased shadow for nav */
+			margin-top: 0px; /* Adjust to create space between nav and header */
+		}
+
+		nav a {
+			text-decoration: none;
+			color: #58D3F7;
+			font-size: 1.7vw; /* Proportional size based on viewport width */
+			flex: 1; /* Ensures links grow/shrink evenly */
+			text-align: center; /* Center the text inside each link */
+			padding: 0 0px
+	    }
+
+		#WhyWeStarted {
+			display: flex; /* Creates a side-by-side layout */
+			flex-direction: row; /* Ensures horizontal alignment */
+			align-items: flex-start; /* Aligns items to the top */
+			justify-content: space-between; /* Spaces out the text and image */
+			width: 90%; /* Restricts the width of the entire section */
+			margin: auto; /* Centers the container on the page */
+			padding: 20px; /* Adds internal spacing */
+			gap: 7%; /* Adds space between the text and the image */
+			}
+
+		#text {
+			flex: 1; /* Allows the text section to take up equal space with the image */
+			max-width: 50%; /* Limits the text to 50% of the container width */
+			color: #373e50;
+			font-size: 1.8vw;
+			}
+
+		#photo {
+			flex: 1; /* Ensures the photo container takes up equal space with the text */
+			max-width: 50%; /* Limits the photo to 50% of the container width */
+			text-align: center; /* Centers the image within the photo container */
+			align-items: center;
+			margin-top: 10%;
+				}
+
+		#photo img {
+		    width: 100%; /* Makes the image fill the container */
+		    height: auto; /* Maintains aspect ratio */
+		    border-radius: 10px; /* Optional: Adds rounded corners */
+		    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow for aesthetics */
+		}
+		#WhatMakesUsUnique {
+			display: flex; /* Creates a side-by-side layout */
+			flex-direction: row; /* Ensures horizontal alignment */
+			align-items: flex-start; /* Aligns items to the top */
+			justify-content: space-between; /* Spaces out the text and image */
+			width: 90%; /* Restricts the width of the entire section */
+			margin: auto; /* Centers the container on the page */
+			padding: 20px; /* Adds internal spacing */
+			gap: 7%; /* Adds space between the text and the image */
+				}
+
+		#text2 {
+			flex: 1; /* Allows the text section to take up equal space with the image */
+			max-width: 50%; /* Limits the text to 50% of the container width */
+			color: #373e50;
+			font-size: 1.8vw;
+				}
+
+		#photo2 {
+			flex: 1; /* Ensures the photo container takes up equal space with the text */
+			max-width: 50%; /* Limits the photo to 50% of the container width */
+			text-align: center; /* Centers the image within the photo container */
+			align-items: center;
+			margin-top: 15%;
+				}
+
+		#photo2 img {
+			width: 100%; /* Makes the image fill the container */
+			height: auto; /* Maintains aspect ratio */
+			border-radius: 10px; /* Optional: Adds rounded corners */
+			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow for aesthetics */
+		}
+
+		#footer{
+			width: 100%;
+			height: 20%;
+			background-color: #ffe6e6;
+			box-shadow: 0px -4px 12px rgba(0, 0, 0, 0.4);
+			display: flex;
+			justify-content: space-between;
+			padding: 10px 20px;
+			align-items: center;
+		}
+		#links{
+			text-decoration: none;
+			color: #58D3F7;
+			font-size: 1.7vw; /* Proportional size based on viewport width */
+			flex: 1; /* Ensures links grow/shrink evenly */
+			text-align: center; /* Center the text inside each link */
+			padding: 0 20px;
+	
+		}
+		#links a {
+			text-decoration: none;
+			color: #4e8187;
+			justify-content: space-between;
+		}
+		#title{
+			flex: 1;
 			display: flex;
 			justify-content: center;
-			margin: 10%;
-      width: -60px;
-      position: relative;
-      justify-content: space-between;
-      position: relative;
-      top: -70px;
-      width:75%;
-      font-size: 150%;
-      height:auto;
+			align-items: center;
+			font-size: 2.5vw;
+			color: #58D3F7;
 		}
 
-		#topMenu button {
-			font-size: 2vw ; /* Increase button size */
-			margin: 5px;
-      background-color: #58D3F7; /* Set background color to light blue */
-			color: #FFFFFF; /* Set text color to white */
-			border: none; /* Remove button border */
-			padding: 10px 40px; /* Adjust button padding */
-      border-radius: 20px;
-			font-family: "Goudy Old Style", serif;
-
+		/* Carousel Section */
+		#carousel {
+		    width: 100%; /* Full width */
+		    height: auto;
+		    position: relative; /* Necessary for slides and overlays */
+		    overflow: hidden;
 		}
+
+		.carousel-slide {
+		    position: relative; /* Needed for absolute positioning of overlays */
+		}
+
+		.carousel-slide img {
+		    width: 100%;
+		    height: 100%;
+		    object-fit: cover; /* Ensures image scales properly */
+		}
+
+		.carousel-overlay {
+		    position: absolute;
+			width: 20%;
+			height: 10%;
+		    bottom: 10%;
+		    right: 0px;
+		    background-color: rgba(211, 211, 211, 0.8);
+		    color: #000000;
+		    font-size: 2.0vw;
+		    padding: 10px 20px;
+		    border-radius: 5px;
+		    z-index: 10;
+			align-items: center;
+		}
+
+
 	</style>
 
-	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" />
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
 	<script>
@@ -209,8 +200,8 @@
 			$('#carousel').slick({
 				autoplay: true,
 				autoplaySpeed: 2700,
-				dots: false,
-				arrows: false,
+				dots: false, /* Removed dots for navigation */
+				arrows: false, /* Removed navigation arrows */
 				infinite: true,
 				speed: 500,
 				fade: false,
@@ -221,125 +212,95 @@
 </head>
 
 <body>
-		<div id="header">
-			<h1>
-				<p style="font-size:160%;color:#58D3F7; width:100%;">
-					<b><i>Macaron Tea House</i></b>
-				</p>
-			</h1>
-			<div id="logo">
-				<img src="Pictures/logo2.png" width="100px" height="auto">
-			</div>
+	<div id="header">
+		<div id="logo">
+			<img src="Pictures/logo2.png" alt="Logo">
 		</div>
-
-<div id = "banner">
-	<img src = "Pictures/banner.jpg" width="100%" height="auto">
-</div>
-
-	<div id="topMenu">
-		<button id="btn1" onclick="window.location.href='index.html'">Home</button>
-		<button id="btn2" onclick="window.location.href='A_OtherBakedGoods.html'">Other Delights</button>
-		<button id="btn3" onclick="window.location.href='A_AboutUs.html'">About Us</button>
-		<button id="btn4" onclick="window.location.href='A_Order.html'">Order</button>
-		<button id="btn5" onclick="window.location.href='A_Menu.html'">Menu</button>
+		<h1>Macaron Tea House</h1>
 	</div>
+
+	<nav>
+		<a href="index.html">Home</a>
+		<a href="A_Flavors.html">Macaron Flavors</a>
+		<a href="A_OtherBakedGoods.html">Other Delights</a>
+		<a href="A_AboutUs.html">About Us</a>
+		<a href="A_Order.html">Order</a>
+		<a href="A_Menu.html">Menu</a>
+	</nav>
 
 	<div id="carousel">
-  <div class="slide">
-    <img src="Pictures/espresso1.jpg" alt="Slide 1" width="100%" height="auto">
-  </div>
-  <div class="slide">
-    <img src="Pictures/espresso2.jpg" alt="Slide 2" width="100%" height="auto">
-
-  </div>
-   <div class="slide">
-    <img src="Pictures/espresso3.jpg" alt="Slide 3" width="100%" height="auto">
-  </div>
-</div>
-
-
-	<div id="label">
-		<a href="A_Special.html">
-			<p style="font-size:240%; width:100%; margin: auto">
-				<b><u>Click For This Week's Special...</u></b>
-			</p>
+		<a href = "A_Special.html">
+			<div class="carousel-slide">
+				<img src="Pictures/heart4.jpg" alt="Slide 1">
+				<div class="carousel-overlay">Featured Item: Vanilla Heart Macarons</div>
+			</div>
 		</a>
+		<a href = "A_Special.html">
+			<div class="carousel-slide">
+				<img src="Pictures/heart5.jpg" alt="Slide 2">
+				<div class="carousel-overlay">Click to Shop Now</div>
+			</div>
+		</a>
+			<a href = "A_Special.html">
+			<div class="carousel-slide">
+				<img src="Pictures/heart6.jpg" alt="Slide 3">
+				<div class="carousel-overlay">Click for more information</div>
+			</div>
+		</a>
+
 	</div>
 
-  <container id="row-1">
-   <div id="Mango">
-   <img src="Pictures/mangom.jpg" width="100%" height="auto">
-   <p style="position:relative;"><a href="Mango.html"><u>Mango Jam Macarons</u> </a href> </p>
-   </div>
-   <div id="Red-bean">
-   <img src="Pictures/Car.jpg" width="100%" height="auto">
-   <p style="position:relative"><a href="Redbean.html"> <u> Caramel Macarons</u> </a href> </p>
-   </div>
-   <div id="Strawberry">
-   <img src="Pictures/vv.jpg" width="100%" height="auto">
-   <p style="position:relative"><a href="Vanilla.html"> <u> Vanilla Macarons</u> </a href> </p>
-   </div>
-  </container>
-  <div id="row-2">
-   <div id="Blueberry">
-   <img src="Pictures/Blueberry.jpg" width="100%" height="auto">
-   <p style="position:relative;"><a href="Blueberry 2.html"><u>Blueberry Jam Macarons</u> </a href> </p>
-   </div>
-   <div id="Creamcheese">
-   <img src="Pictures/sjam.jpg" width="100%" height="auto">
-   <p style="position:relative"><a href="Creamcheese.html"> <u> Strawberry Jam Macarons</u> </a href> </p>
-   </div>
-   <div id="Strawberry">
-   <img src="Pictures/straw.jpg" width="100%" height="auto">
-   <p style="position:relative"><a href="Strawberry.html"> <u> Strawberry Milk Macarons</u> </a href> </p>
-   </div>
-  </div>
-  <div id="row-3">
-   <div id="Chocolate">
-   <img src="Pictures/cm.jpg" width="100%" height="auto">
-   <p style="position:relative"><a href= "chocolate.html"><u> Chocolate Macarons </u> </a href></p>
-   </div>
-   <div id="Earl_gray">
-   <img src="Pictures/earlgray.jpg" width="100%" height="auto">
-   <p style="position:relative;"><a href="Earl Gray.html"> <u> Earl Gray Macarons </u> </a href> </p>
-   </div>
-   <div id="Lemon">
-   <img src="Pictures/lemon.jpg" width="100%" height="auto">
-   <p style="position:relative;"><a href="Lemon.html"> <u> Lemon Macarons </u> </a href> </p>
-   </div>
-  </div>
-  <div id="row-4">
-   <div id="Rose">
-   <img src="Pictures/rose.jpg" width="100%" height="auto">
-   <p style="position:relative;"><a href="Rose.html"> <u> Rose Macarons </u> </a href> </p>
-   </div>
-   <div id="Mango-milk">
-   <img src="Pictures/mm.jpg" width="100%" height="auto">
-   <p style="position:relative;"><a href="SL.html"> <u> Mango Milk Macarons </u></a href> </p>
-   </div>
-   <div id="Matcha">
-   <img src="Pictures/matcha.jpg" width="100%" height="auto">
-   <p style="position:relative;"><a href="pump.html"><u> Matcha Macarons </u>  </a href></p>
-   </div>
-  </div>
-   <div id="row-5">
-    <div id="Biscoff">
-    <img src="Pictures/biscoff2.jpg" width="100%" height="auto">
-    <p style="position:relative;"><a href="Biscoff.html"> <u> Biscoff Macarons </u> </a href> </p>
-    </div>
-    <div id="Espresso">
-    <img src="Pictures/espresso1.jpg" width="100%" height="auto">
-    <p style="position:relative;"><a href="Espresso.html"> <u> Espresso Macarons </u></a href> </p>
-    </div>
-    <div id="Seasonal">
-    <img src="Pictures/flagmac7.jpg" width="100%" height="auto">
-    <p style="position:relative;"><a href="Seasonal.html"><u> Seasonal Macarons </u>  </a href></p>
-    </div>
-  </div>
-   <div id="macaron-menu">
-  	 <img src="Pictures/Macaron Menu 10.jpg" width="100%" height="auto">
-   </div>
+	<div id="WhyWeStarted">
+	    <div id="text">
+	        <p style="color:#58D3F7; font-size:2.5vw;">Why We Started</p>
+	        <p>
+	            We've always had a deep love for baked goods—cookies, cakes, and flaky croissants.
+	            What started as sharing these little treats with friends and family quickly grew after seeing the joy they brought to others.
+	            The smiles and excitement on their faces encouraged us to share our passion with even more people.
+	            We understand how food can create lasting memories and bring joy, and we are thrilled to bring that experience to you!
+	            <br>
+	            Macarons were especially intriguing to us. The difficulty and delicateness of these cookies
+	            made every mistake and every effort so worthwhile. After much trial and error, testing, and taste testing,
+	            we finally perfected our own unique version of the French Macaron.
+	        </p>
+	    </div>
+	    <div id="photo">
+	        <img src="Pictures/strawberry milk.jpg" alt="Strawberry Milk">
+	    </div>
+	</div>
+	<div id="WhatMakesUsUnique">
+		<div id="photo2">
+				<img src="Pictures/mooncake3.JPG" alt="Mooncake">
+		</div>
+	    <div id="text2">
+	        <p style="color:#58D3F7; font-size:2.5vw;">What Do We Offer</p>
+	        <p>
+	            It's no surprise—we absolutely love tea! Every item on our menu is crafted to pair beautifully with any type of tea.
+							While we occasionally provide recommendations on which desserts complement specific teas, we encourage you to experiment
+							and discover the pairings that truly speak to your heart. 
+	            <br>
+	           But our offerings don’t stop at macarons. From gooey chocolate chip cookies and indulgent almond croissants to light, buttery sable cookies,
+						 we have a wide variety of treats to satisfy any sweet craving. Each delight is made with high-quality ingredients like organic flour, sugar,
+						 cage-free eggs, and, of course, lots of love.
+						 <br>
+						 And... when the seasons change, we love getting creative with both seasonal baked goods and
+							seasonal macaron flavors. For example, when fall arrives, you might find maple macarons or white lotus mooncakes on our menu.
+							We truly love what we do, and we are so excited to serve you!
+	        </p>
+	    </div>
+
+	</div>
+	<div id = "footer">
+		<div id = "title">
+			<p style = "font-size:3.0vw">Macaron Tea House</p>
+		</div>
+		<div id = "links">
+			<a href = "https://www.facebook.com/macteahouse/">Facebook</a> 
+			<a href = "https://www.instagram.com/macaronteahouse/?hl=en">Instagram</a>
+			<a href="mailto: macaronteahouse@hotmail.com"> Email <a></a>
+		</div>
+	</div>
 
 
-  </body>
-  </html>
+</body>
+</html>

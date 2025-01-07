@@ -1,211 +1,238 @@
 
 <html>
-	<head>
-		<title>Other Delights </title>
-		<style type="text/css">
-		html { background-color: #FFFAF9}
-  p{
-    color:#00BFFF;
-    font-size: 150%
-		font-family: "Goudy Old Style", serif;
-  }
-  h1{
-    position:relative;
-		float:left;
-	  top: 0px;
-	  width:70%;
-	  margin: auto;
-  }
-	#topMenu {
+<head>
+	<title>Other Delights</title>
+	<style type="text/css">
+	html {
+		background-color: #FFFAF9;
+		font-family: "Times New Roman", serif;
+	}
+
+	#header {
+		width: 100%;
+		background-color: #ffe6e6;
+		padding: 30px 0;
+		box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
+		display: flex;
+		align-items: center; /* Center vertically */
+		justify-content: center; /* Center horizontally */
+		gap: 20px; /* Spacing between logo and title */
+		position: relative; /* To ensure shadow is applied correctly */
+		z-index: 10; /* Keeps the header layer above the nav */
+	}
+
+	h1 {
+		margin: 0;
+		justify-content: center;
+		color: #58D3F7; /* Light blue */
+		display: flex;
+		font-size: clamp(2em, 6vw, 5em); /* Flexible font size */
+		font-style: italic;
+		font-weight: normal;
+	}
+
+	#logo img {
+		max-width: 120px;
+		height: auto;
+		width: clamp(80px, 20vw, 120px); /* Flexible logo size */
+	}
+
+	/* Navigation Bar */
+	nav {
+		width: 100%;
+		height: 7%;
+		background-color: #ccffff; /* Light blue */
 		display: flex;
 		justify-content: space-between;
-		position: relative;
-		top: -10px;
-		width:75%;
-		font-size: 150%;
-		height:auto;
-		margin: 0px;
-}
-#topMenu button {
-	font-size: 2vw ; /* Increase button size */
-	margin: 5px;
-	background-color: #58D3F7; /* Set background color to light blue */
-	color: #FFFFFF; /* Set text color to white */
-	border: none; /* Remove button border */
-	padding: 10px 40px; /* Adjust button padding */
-	border-radius: 20px;
-	font-family: "Goudy Old Style", serif;
-}
-#topMenu {
-	display: flex;
-	justify-content: center;
-	margin: 10%;
-	width: -60px;
-	position: relative;
-	justify-content: space-between;
-	position: relative;
-	top: -70px;
-	width:75%;
-	font-size: 150%;
-	height:auto;
-}
-#logo	{
-  margin-top: 10px;
-	float: right;
-}
+		padding: 10px 0px;
+		align-items: center;
+		box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4); /* Increased shadow for nav */
+		margin-top: 0px; /* Adjust to create space between nav and header */
+	}
 
-#header{
-   width: 70%;
-   margin: auto;
-	 position: relative;
-  }
-		#Crinkle{
-			position:relative;
-			width:30%
-		}
-		#Oatmeal{
-		  position:relative;
-			width:30%
-		}
-		#Cookie{
-		  position:relative;
-			width:30%
-		}
-		#PeanutCookie{
-			position:relative;
-			width:30%
-		}
-		#EggTart{
-			position:relative;
-			width:30%
-		}
-		#Walnut{
-			position:relative;
-			width:30%
-		}
-		#Mochi{
-			position:relative;
-			width:30%
-		}
-		#Rollcake{
-			position:relative;
-			width:30%
-		}
-		#Dalgona{
-			position:relative;
-			width:30%
-		}
-		#title{
+	nav a {
+		text-decoration: none;
+		color: #58D3F7;
+		font-size: 1.7vw; /* Proportional size based on viewport width */
+		flex: 1; /* Ensures links grow/shrink evenly */
+		text-align: center; /* Center the text inside each link */
+		padding: 0 0px
+	}
+	#Crinkle,#Oatmeal,#Cookie,#PeanutCookie,#EggTart,#Walnut,#Mochi,#Rollcake,#Dalgona{
+		position:relative;
+		width:30%
+	}
+	
+	#row-1, #row-2, #row-3{
 			display: flex;
-			position:relative;
-			width:40%;
-			margin:auto;
-		}
+			justify-content: space-between;
+			width: 95%;
+			margin: auto;
+			margin-top: 20px;
+	}
+	#row-3{
+		margin-bottom: 10%;
 
-		#row-1{
-			display:flex;
+	}
+	#footer{
+			width: 100%;
+			height: 20%;
+			background-color: #ffe6e6;
+			box-shadow: 0px -4px 12px rgba(0, 0, 0, 0.4);
+			display: flex;
 			justify-content: space-between;
-			position:relative;
-			width:95%;
-      margin: auto;
-			top:0px;
+			padding: 10px 20px;
+			align-items: center;
 		}
-		#row-2{
-			display:flex;
-			justify-content: space-between;
-			position:relative;
-			width:95%;
-			margin:auto;
-			top:80px;
-		}
-		#row-3{
-			display:flex;
-			justify-content: space-between;
-			position:relative;
-			width:95%;
-			margin:auto;
-			top:130px;
-		}
-		#goods-menu{
-			position:relative;
-			width:100%;
-			margin:auto;
-			top:200px;
-		}
-		</style>
+	#links{
+		text-decoration: none;
+		color: #58D3F7;
+		font-size: 1.7vw; /* Proportional size based on viewport width */
+		flex: 1; /* Ensures links grow/shrink evenly */
+		text-align: center; /* Center the text inside each link */
+		padding: 0 20px;
+
+	}
+	#links a {
+		text-decoration: none;
+		color: #4e8187;
+		justify-content: space-between;
+	}
+	#title{
+		flex: 1;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 2.5vw;
+		color: #58D3F7;
+	}
+
+	/* Carousel Section */
+	#carousel {
+		width: 100%; /* Full width */
+		height: auto; /* Fixed height */
+		position: relative; /* Necessary for slides and overlays */
+		overflow: hidden;
+	}
+
+	.carousel-slide {
+		position: relative; /* Needed for absolute positioning of overlays */
+	}
+
+	.carousel-slide img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover; /* Ensures image scales properly */
+	}
+
+
+
+	</style>
+
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" />
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('#carousel').slick({
+				autoplay: true,
+				autoplaySpeed: 2700,
+				dots: false, /* Removed dots for navigation */
+				arrows: false, /* Removed navigation arrows */
+				infinite: true,
+				speed: 500,
+				fade: false,
+				cssEase: 'linear'
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<div id="header">
+		<div id="logo">
+			<img src="Pictures/logo2.png" alt="Logo">
+		</div>
+		<h1>Other Delights</h1>
+	</div>
+
+	<nav>
+		<a href="index.html">Home</a>
+		<a href="A_Flavors.html">Macaron Flavors</a>
+		<a href="A_OtherBakedGoods.html">Other Delights</a>
+		<a href="A_AboutUs.html">About Us</a>
+		<a href="A_Order.html">Order</a>
+		<a href="A_Menu.html">Menu</a>
+	</nav>
+
+	<div id="carousel">
+			<div class="carousel-slide">
+				<img src="Pictures/croissant.jpg" alt="Slide 1">
+			</div>
+			<div class="carousel-slide">
+				<img src="Pictures/sable1.jpg" alt="Slide 2">
+			</div>
+			<div class="carousel-slide">
+				<img src="Pictures/chocchip1.jpg" alt="Slide 3">
+			</div>
+
+	</div>
 	</head>
 		<body>
-			<div id="header">
-				<h1>
-					<p style="font-size:160%;color:#58D3F7; width:100%;">
-						<b><i>Other Delights</i></b>
-					</p>
-				</h1>
-				<div id="logo">
-					<img src="Pictures/logo2.png" width="100px" height="auto">
-				</div>
-			</div>
-
-	<div id = "banner">
-		<img src = "Pictures/sableBanner.jpg" width="100%" height="auto">
-	</div>
-			<div id="topMenu">
-				<button id="btn1" onclick="window.location.href='index.html'">Home</button>
-				<button id="btn2" onclick="window.location.href='A_OtherBakedGoods.html'">Other Delights</button>
-				<button id="btn3" onclick="window.location.href='A_AboutUs.html'">About Us</button>
-				<button id="btn4" onclick="window.location.href='A_Order.html'">Order</button>
-				<button id="btn5" onclick="window.location.href='A_Menu.html'">Menu</button>
-			</div>
+			
 	<container id="row-1">
     <div id="Crinkle">
-			<p><img src="Pictures/crinklecook.jpg" width="100%" height="auto"</p>
-			<p style="position:relative;"><u> Brownie Cookies </u> ($8.00 for 12) </p>
+			<p><img src="Pictures/crinklecook.jpg" width="100%" height="auto"></p>>
+			<p style="position:relative;">Brownie Cookies  ($8.00 for 12) </p>
 		</div>
 		<div id="Oatmeal">
 		<p> <img src="Pictures/oatmealrasin.jpg" width="100%" height="auto"></p>
-		<p style="position:relative;"> <u> Oatmeal Raisin Cookies </u>($8.00 for 16) </p>
+		<p style="position:relative;"> Oatmeal Raisin Cookies ($8.00 for 16) </p>
 		</div>
 		<div id="Cookie">
 		<p> <img src="Pictures/chocchip1.jpg" width="100%" height="auto"></p>
-		<p style="position:relative;"> <u> Brown Butter Chocolate Chip Cookies </u>($12.00 for 10) </p>
+		<p style="position:relative;"> Brown Butter Chocolate Chip Cookies ($12.00 for 10) </p>
 		</div>
 </container>
   <container id="row-2">
 		<div id="PeanutCookie">
 		<img src="Pictures/Peanut Butter.jpg" width="100%" height="auto">
-		<p style="position:relative;"><u> Peanut Butter Cookie</u> ($8.00 for 16) </p>
+		<p style="position:relative;">Peanut Butter Cookie ($8.00 for 16) </p>
 		</div>
 		<div id="EggTart">
 		<img src="Pictures/eggtart.jpg" width="100%" height="auto">
-		<p style="position:relative;"><u> Egg Tart</u> ($10.00 for 12) </p>
+		<p style="position:relative;">Egg Tart($10.00 for 12) </p>
 		</div>
 		<div id="Walnut">
 		<img src="Pictures/walnut.jpg"  width="100%" height="auto">
-		<p style="position:relative;"><u> Walnut and Chocolate Cookies</u> ($8.00 for 12) </p>
+		<p style="position:relative;">Walnut and Chocolate Cookies($8.00 for 12) </p>
   </div>
 </container>
 	<container id="row-3">
 		<div id="Mochi">
 		<img src="Pictures/croissant.JPG" width="100%" height="auto">
-		<p style="position:relative;"><u> Almond Croissant</u> ($25.00 for 10) </p>
+		<p style="position:relative;">Almond Croissant($25.00 for 10) </p>
 		</div>
 		<div id="Rollcake">
 		<img src="Pictures/Roll Cake.jpg"  width="100%" height="auto">
-		<p style="position:relative;"><u>Rollcake</u> ($10.00 for 2 rolls ~approx. 6-8 pieces per roll) </p>
+		<p style="position:relative;">Rollcake ($10.00 for 2 rolls ~approx. 6-8 pieces per roll) </p>
 		</div>
 		<div id="Dalgona">
 		<img src="Pictures/sable1.JPG" width="100%" height="auto">
-		<p style="position:relative;"><u>Almond and Chocolate Sable Cookies</u> ($10.00 for 20 cookies) </p>
+		<p style="position:relative;">Almond and Chocolate Sable Cookies ($10.00 for 20 cookies) </p>
 		</div>
 	</container>
-		<div id="goods-menu">
-			<img src="Pictures/baked goods.jpg" width="100%" height="auto">
+	<div id = "footer">
+		<div id = "title">
+			<p style = "font-size:3.0vw">Macaron Tea House</p>
 		</div>
+		<div id = "links">
+			<a href = "https://www.facebook.com/macteahouse/">Facebook</a> 
+			<a href = "https://www.instagram.com/macaronteahouse/?hl=en">Instagram</a>
+			<a href="mailto: macaronteahouse@hotmail.com"> Email <a></a>
+		</div>
+	</div>
 
 		</body>
-
-
-
-
 
 </html>
